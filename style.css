@@ -45,6 +45,7 @@ main {
   z-index: 2;
   backdrop-filter: blur(2rem);
   display: flex;
+
 }
 .circle1,
 .circle2 {
@@ -81,12 +82,14 @@ main {
     rgba(255, 255, 255, 0.3)
   );
   border-radius: 2rem;
+
 }
 .link {
   display: flex;
   margin: 2rem 0rem;
   padding: 1rem 5rem;
   align-items: center;
+
 }
 .link h2 {
   padding: 0rem 2rem;
@@ -181,3 +184,39 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* For screen width with different devices*/
+@media only screen and (max-width: 600px){
+  .links{
+    width:100;
+    background: linear-gradient(#65dfc9, white);
+    postion: absolute;
+    top: 75px;
+    right:0;
+    z-index:2;
+  }
+  .links{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .links a{
+    color:black;
+
+
+  }
+  .games{
+    flex-direction: column;
+    margin: 50px 0px;
+  }
+  .cards{
+    flex-direction: column;
+    margin: 50px 0px;
+  }
+
+  .links span:hover{
+    background: green;
+    color: white;
+  }
+
+    
+  

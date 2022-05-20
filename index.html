@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width">    
     <title>Glass Website</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -16,25 +16,25 @@
       <section class="glass">
         <div class="dashboard">
           <div class="user">
-            <img src="./images/avatar.png" alt="" />
+              <img src="./images/avatar.png" class="meu-icon" onclick="togglemenu()" />
             <h3>Simo Edwin</h3>
             <p>Pro Member</p>
           </div>
           <div class="links">
             <div class="link">
-              <img src="./images/twitch.png" alt="" />
+              <img src="./images/twitch.png" class="meu-icon" onclick="togglemenu()" />
               <h2>Streams</h2>
             </div>
             <div class="link">
-              <img src="./images/steam.png" alt="" />
+              <img src="./images/steam.png" class="meu-icon" onclick="togglemenu()" />
               <h2>Games</h2>
             </div>
             <div class="link">
-              <img src="./images/upcoming.png" alt="" />
+              <img src="./images/upcoming.png" class="meu-icon" onclick="togglemenu()" />
               <h2>New</h2>
             </div>
             <div class="link">
-              <img src="./images/library.png" alt="" />
+              <img src="./images/library.png" class="meu-icon" onclick="togglemenu()" />
               <h2>Library</h2>
             </div>
           </div>
@@ -82,5 +82,22 @@
     </main>
     <div class="circle1"></div>
     <div class="circle2"></div>
+    <script>
+      var links = document.getElementbyId("links"); //couldnt get it to work
+      links.style.maxHeight = "0px";
+
+      function togglemenu(){
+
+        if(links.style.maxHeight =="0px")
+        {
+          links.stle.maxHeight = "130px";
+        }
+        else{
+          links.style.maxHeight = "0px";
+        }
+      }
+      
+
+    </script>
   </body>
 </html>
